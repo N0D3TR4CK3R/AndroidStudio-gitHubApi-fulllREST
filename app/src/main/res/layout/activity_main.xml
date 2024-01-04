@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/bgApp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:rowCount="5"
+        tools:ignore="MissingConstraints">
+
+        <GridLayout
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="100dp"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:rowCount="5"
+            android:columnCount="2"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:text="Username: "
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fntColor"/>
+
+            <TextView
+                android:text="Login: "
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/logIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fntColor" />
+
+            <TextView
+                android:text="Followers: "
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fntColor" />
+
+            <TextView
+                android:text="Following: "
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fntColor" />
+
+            <TextView
+                android:text="Email: "
+                android:textColor="@color/white"
+                android:layout_gravity="start"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/fntColor" />
+        </GridLayout>
+
+        <Button
+            android:id="@+id/listRepo"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="List Repositories"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:onClick="listActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/createRepo"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Create Repository"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:onClick="createActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/deleteRepo"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Delete Repository"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:onClick="deleteActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/editRepo"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Edit Repository"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:onClick="editActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/repo_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_marginTop="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#312e32"
+        android:layout_margin="16dp">
+
+        <!-- Título del Repositorio -->
+        <TextView
+            android:id="@+id/repoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#c4c4c4"
+            android:background="#524c54"/>
+
+        <TextView
+            android:id="@+id/repoDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repoName"
+            android:textSize="14dp"
+            android:textColor="#c4c4c4"
+            android:background="#524c54"/>
+
+        <TextView
+            android:id="@+id/repoLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repoDescription"
+            android:textSize="14dp"
+            android:textColor="#c4c4c4"
+            android:background="#524c54"/>
+
+        <!-- Botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/repoLanguage"
+            android:orientation="horizontal">
+
+            <!-- Botón 'E' -->
+            <Button
+                android:id="@+id/btnEditRepository"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Edit"
+                android:textSize="14sp"
+                android:textColor="#c3b0ff"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+            <!-- Botón 'D' -->
+            <Button
+                android:id="@+id/btnDeleteRepository"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="8dp"
+                android:text="Delete"
+                android:textSize="14sp"
+                android:textColor="#c3b0ff"
+                android:background="?android:attr/selectableItemBackgroundBorderless" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

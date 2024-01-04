@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgApp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextRepoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repository Name"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/editTextRepoOwner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Repository Owner"
+            android:textColorHint="@color/white"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Repository"
+            android:onClick="onDeleteRepoButtonClick"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
